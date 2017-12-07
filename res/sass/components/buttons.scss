@@ -9,7 +9,6 @@
     @include project-button();
 
     &:hover {
-        // TODO : Add right arrow
         background-color: $button-secondary-color;
     }
 }
