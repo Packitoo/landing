@@ -1,0 +1,14 @@
+.copyright {
+    color: #ffffff;
+    font-size: 11px;
+    position: relative;
+
+    a {
+        color: #ffffff;
+        top: 10px;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -10,6 +10,10 @@ header {
         background-color: $primary-color;
         height: 30px;
         margin-bottom: -1px;
+
+        .phone {
+            padding-right: 20px;
+        }
     }
 
     .header-main {
@@ -18,7 +22,6 @@ header {
         .logo {
             float: left;
             position: absolute;
-            left: 0;
             z-index: 1;
             width: 150px;
             padding-top: 15px;
@@ -26,10 +29,9 @@ header {
         }
     
         .main-nav {
-            right: 0;
             clear: none;
-            position: absolute;
-            z-index: 100;
+            float: right;
+            position: relative;
             line-height: 30px;
             height: 100%;
             margin: 0;
@@ -42,7 +44,10 @@ header {
                     line-height: 70px;
                     float: left;
                     position: relative;
-                    padding: 0 13px;
+                    
+                    &:not(:last-child) {
+                        padding: 0 13px;
+                    }
                 }
             }
         }
