@@ -9,9 +9,8 @@ $dark-text-color: #444444;
           border-radius: $radius;
 }
 
-.box {
-    @include border-radius(10px);
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 body {
     font: 13px/1.65em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -42,13 +41,30 @@ footer, header, section {
     width: 100%;
     margin: 0 auto;
     padding: 0px 50px;
-    clear: both;
 }
 
 .inner-container {
     position: relative;
     height:100%;
     width:100%; 
+}
+
+/*------ TEXT -------*/
+h1 {
+    font-size: 50px;
+    font-family: 'Poppins';
+    font-weight: 700 !important;
+    font-stretch: 100%;
+    font-style: normal;
+    line-height: 1.1em;
+    color: $primary-color;
+}
+
+h3 {
+    font-size: 20px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 300;
 }
 
 a {
@@ -64,6 +80,8 @@ a:hover {
 
 .button {
     text-decoration: none;
+    min-width: 200px;
+    max-width: 100%;
 }
 
 .main-button {
@@ -71,50 +89,56 @@ a:hover {
     color: $secondary-color !important;
     background-color: #fed230;
     border-color: #fed230;
-    border-radius: 100px;
+    @include border-radius(100px);
 }
 
 /*------ HEADER -------*/
 
-header{
+header {
+    background-color: white;
     position: fixed;
-    height: 90px;
+    height: 120px;
     z-index: 500;
     box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
 
-    .logo {
-        float: left;
-        position: absolute;
-        left: 0;
-        z-index: 1;
-        width: 150px;
-        padding-top: 15px;
-        padding-bottom: 15px !important;
+    .header-contact {
+        line-height: 30px;
+        background-color: $primary-color;
+        height: 30px;
+        margin-bottom: -1px;
     }
 
-    .main-nav {
-        right: 0;
-        clear: none;
-        position: absolute;
-        z-index: 100;
-        line-height: 30px;
-        height: 100%;
-        margin: 0;
+    .header-main {
+        height: 90px;
         
-        > ul {
-            list-style: none;
-            list-style-position: outside;
-
-            > li {
-                line-height: 30px;
-                float: left;
-                position: relative;
-                padding: 0 13px;
-
-                > a {
-                    display: block;
-                    height: 9Opx;
-                    line-height: 9Opx;
+        .logo {
+            float: left;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            width: 150px;
+            padding-top: 15px;
+            padding-bottom: 15px !important;
+        }
+    
+        .main-nav {
+            right: 0;
+            clear: none;
+            position: absolute;
+            z-index: 100;
+            line-height: 30px;
+            height: 100%;
+            margin: 0;
+            
+            > ul.menu {
+                list-style: none;
+                list-style-position: outside;
+    
+                > li.menu-item {
+                    line-height: 70px;
+                    float: left;
+                    position: relative;
+                    padding: 0 13px;
                 }
             }
         }
@@ -123,10 +147,47 @@ header{
 
 /*------ MAIN -------*/
 
-section {
-    height: 100px;
+div#main {
+    padding-top: 120px;
 }
 
+section {
+    min-height: 100px;
+}
+
+section > .container > div {
+    padding: 100px 50px;
+}
+
+@mixin background-img($position) {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: $position;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+#presentation {
+    @include background-img(center right);
+    background-image: url("../images/Homepage-Packitoo.jpg");
+
+    .subheader-container {
+        margin-bottom: 50px;
+    }
+
+    .call-to-action-container .button {
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-stretch: 100%;
+        font-style: normal;
+        font-weight: 700;
+        padding: 25px 50px;
+
+        &:hover {
+
+        }
+    }
+}
 /*------ FOOTER -------*/
 footer {
     background-color: $primary-color;
@@ -134,15 +195,28 @@ footer {
     .container {
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+}
+.copyright {
+    color: #ffffff;
+    font-size: 11px;
+    position: relative;
 
-        .copyright {
-            color: #ffffff;
-            float: left;
-            font-size: 11px;
+    a {
+        color: #ffffff;
+        top: 10px;
         
-            a {
-                color: #ffffff;
-            }
+        &:hover {
+            text-decoration: underline;
         }
     }
+}
+
+.copyright-left {
+    float: left;
+}
+
+.copyright-right {
+    // right: 0;
+    float: right;
 }
