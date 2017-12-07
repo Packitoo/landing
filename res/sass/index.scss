@@ -51,21 +51,32 @@ footer, header, section {
 }
 
 /*------ TEXT -------*/
+h1, h2, h3, h4, h5, h6, p {
+    font-style: normal;
+    font-stretch: 100%;
+}
+
 h1 {
     font-size: 50px;
     font-family: 'Poppins';
     font-weight: 700 !important;
-    font-stretch: 100%;
-    font-style: normal;
     line-height: 1.1em;
     color: $primary-color;
 }
 
+h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 h3 {
     font-size: 20px;
-    font-stretch: 100%;
-    font-style: normal;
     font-weight: 300;
+}
+
+.subheader-container, .secondary-header {
+    margin-bottom: 50px;
 }
 
 a {
@@ -173,10 +184,6 @@ section .container > div {
     @include background-img(center right);
     background-image: url("../images/Homepage-Packitoo.jpg");
 
-    .subheader-container {
-        margin-bottom: 50px;
-    }
-
     .call-to-action-container .button {
         font-family: 'Roboto';
         font-size: 20px;
@@ -206,6 +213,51 @@ section .container > div {
         height: 100%;
         width: 100%;
     }
+}
+
+#process {
+    .step-header {
+        text-align: center;
+    }
+
+    .process-step {
+
+    }
+
+    #process-step-1 {
+        background-color: $secondary-color;
+    }
+    
+    #process-step-2 {
+        background-color: white;
+    }
+    
+    #process-step-3 {
+    
+    }
+}
+
+#benefit {
+    .secondary-header {
+        text-align: center;
+    }
+}
+
+#stats {
+
+}
+
+#community {
+
+}
+
+#call-to-action {
+    background-image: url("../images/001-e1494361373846-1500x1266.jpg");
+    @include background-img(bottom lef);
+}
+
+#contact {
+
 }
 
 /*------ FOOTER -------*/
