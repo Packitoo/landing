@@ -15,6 +15,7 @@ $dark-text-color: #444444;
 body {
     font: 13px/1.65em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #444;
+    background-color: $secondary-color;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -153,9 +154,10 @@ div#main {
 
 section {
     min-height: 100px;
+    position: relative;
 }
 
-section > .container > div {
+section .container > div {
     padding: 100px 50px;
 }
 
@@ -188,6 +190,24 @@ section > .container > div {
         }
     }
 }
+
+#maze {
+    @include background-img(center center);
+    background-image: url("../images/maze.jpg");
+
+    .overlay {
+        background-color: $primary-color;
+        opacity: 0.9;
+        // width: 100%;
+        // height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 /*------ FOOTER -------*/
 footer {
     background-color: $primary-color;
