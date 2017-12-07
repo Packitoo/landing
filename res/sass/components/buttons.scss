@@ -1,0 +1,29 @@
+.button {
+    text-decoration: none;
+    min-width: 200px;
+    max-width: 100%;
+}
+
+.small-button {
+    padding: 12px;
+    @include project-button();
+
+    &:hover {
+        // TODO : Add right arrow
+        background-color: $button-secondary-color;
+    }
+}
+
+.main-button {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 700;
+    padding: 25px 50px;
+    @include project-button();
+
+    &:hover {
+        // TODO : Add right arrow
+    }
+}

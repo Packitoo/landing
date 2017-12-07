@@ -1,0 +1,7 @@
+
+@mixin project-button() {
+    color: $secondary-color !important;
+    background-color: $button-main-color;
+    border-color: $button-main-color;
+    @include border-radius(100px);
+}

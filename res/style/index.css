@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+.button {
+  text-decoration: none;
+  min-width: 200px;
+  max-width: 100%; }
+
+.small-button {
+  padding: 12px;
+  color: #f9f9f9 !important;
+  background-color: #fed230;
+  border-color: #fed230;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px; }
+  .small-button:hover {
+    background-color: #ffde64; }
+
+.main-button {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-stretch: 100%;
+  font-style: normal;
+  font-weight: 700;
+  padding: 25px 50px;
+  color: #f9f9f9 !important;
+  background-color: #fed230;
+  border-color: #fed230;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px; }
+
+header {
+  background-color: white;
+  position: fixed;
+  height: 120px;
+  z-index: 500;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1); }
+  header .header-contact {
+    line-height: 30px;
+    background-color: #d21019;
+    height: 30px;
+    margin-bottom: -1px; }
+  header .header-main {
+    height: 90px; }
+    header .header-main .logo {
+      float: left;
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      width: 150px;
+      padding-top: 15px;
+      padding-bottom: 15px !important; }
+    header .header-main .main-nav {
+      right: 0;
+      clear: none;
+      position: absolute;
+      z-index: 100;
+      line-height: 30px;
+      height: 100%;
+      margin: 0; }
+      header .header-main .main-nav > ul.menu {
+        list-style: none;
+        list-style-position: outside; }
+        header .header-main .main-nav > ul.menu > li.menu-item {
+          line-height: 70px;
+          float: left;
+          position: relative;
+          padding: 0 13px; }
+
+footer {
+  background-color: #d21019; }
+  footer .container {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+.copyright {
+  color: #ffffff;
+  font-size: 11px;
+  position: relative; }
+  .copyright a {
+    color: #ffffff;
+    top: 10px; }
+    .copyright a:hover {
+      text-decoration: underline; }
+
+.copyright-left {
+  float: left; }
+
+.copyright-right {
+  float: right; }
+
+body {
+  font: 13px/1.65em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  background-color: #f9f9f9;
+  -webkit-text-size-adjust: 100%; }
+
+body, div {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+div {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+footer, header, section {
+  display: block;
+  width: 100%; }
+
+.container {
+  max-width: 1310px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 50px; }
+
+.inner-container {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+/*------ TEXT -------*/
+h1, h2, h3, h4, h5, h6, p {
+  font-style: normal;
+  font-stretch: 100%; }
+
+h1 {
+  font-size: 50px;
+  font-family: 'Poppins';
+  font-weight: 700 !important;
+  line-height: 1.1em;
+  color: #d21019; }
+
+h2 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 400; }
+
+h3 {
+  font-size: 20px;
+  font-weight: 300; }
+
+.centered-header {
+  text-align: center; }
+
+.subheader-container, .secondary-header {
+  margin-bottom: 50px; }
+
+a {
+  text-decoration: none;
+  color: #444444; }
+
+a:hover {
+  color: #d21019; }
+
+/*------ MAIN -------*/
+div#main {
+  padding-top: 120px; }
+
+section {
+  min-height: 100px;
+  position: relative; }
+
+section .container > div {
+  padding: 100px 50px; }
+
+.red-overlay {
+  background-color: #d21019;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+#presentation {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center right;
+  background-color: #ffffff;
+  background-size: cover;
+  background-image: url("../images/Homepage-Packitoo.jpg"); }
+
+#maze {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-color: #ffffff;
+  background-size: cover;
+  background-image: url("../images/maze.jpg"); }
+
+#process #process-step-1 {
+  background-color: #f9f9f9; }
+#process #process-step-2 {
+  background-color: white; }
+
+#stats {
+  background-image: url("../images/Artboard-Copy-5.jpg");
+  color: white; }
+
+#community img {
+  max-width: 100%; }
+
+#call-to-action {
+  background-image: url("../images/001-e1494361373846-1500x1266.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom lef;
+  background-color: #ffffff;
+  background-size: cover; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,16 +1,15 @@
-$primary-color: #d21019;
-$secondary-color: #f9f9f9;
-$dark-text-color: #444444;
+@import './variables.scss';
+@import './fonts.scss';
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
+// Mixins
+@import './mixins/background-img.scss';
+@import './mixins/border-radius.scss';
+@import './mixins/project-button.scss';
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+// Components
+@import './components/buttons.scss';
+@import './components/header.scss';
+@import './components/footer.scss';
 
 body {
     font: 13px/1.65em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -92,75 +91,6 @@ a:hover {
     color: $primary-color;
 }
 
-/*------ BUTTONS -------*/
-
-.button {
-    text-decoration: none;
-    min-width: 200px;
-    max-width: 100%;
-}
-
-.main-button {
-    padding: 12px;
-    color: $secondary-color !important;
-    background-color: #fed230;
-    border-color: #fed230;
-    @include border-radius(100px);
-}
-
-/*------ HEADER -------*/
-
-header {
-    background-color: white;
-    position: fixed;
-    height: 120px;
-    z-index: 500;
-    box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
-
-    .header-contact {
-        line-height: 30px;
-        background-color: $primary-color;
-        height: 30px;
-        margin-bottom: -1px;
-    }
-
-    .header-main {
-        height: 90px;
-        
-        .logo {
-            float: left;
-            position: absolute;
-            left: 0;
-            z-index: 1;
-            width: 150px;
-            padding-top: 15px;
-            padding-bottom: 15px !important;
-        }
-    
-        .main-nav {
-            right: 0;
-            clear: none;
-            position: absolute;
-            z-index: 100;
-            line-height: 30px;
-            height: 100%;
-            margin: 0;
-            
-            > ul.menu {
-                list-style: none;
-                list-style-position: outside;
-    
-                > li.menu-item {
-                    line-height: 70px;
-                    float: left;
-                    position: relative;
-                    padding: 0 13px;
-                }
-            }
-        }
-    }
-}
-
 /*------ MAIN -------*/
 
 div#main {
@@ -186,29 +116,12 @@ section .container > div {
     width: 100%;
 }
 
-@mixin background-img($position) {
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: $position;
-    background-color: #ffffff;
-    background-size: cover;
-}
-
 #presentation {
     @include background-img(center right);
     background-image: url("../images/Homepage-Packitoo.jpg");
 
     .call-to-action-container .button {
-        font-family: 'Roboto';
-        font-size: 20px;
-        font-stretch: 100%;
-        font-style: normal;
-        font-weight: 700;
-        padding: 25px 50px;
 
-        &:hover {
-
-        }
     }
 }
 
@@ -256,37 +169,4 @@ section .container > div {
 
 #contact {
 
-}
-
-/*------ FOOTER -------*/
-footer {
-    background-color: $primary-color;
-
-    .container {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-}
-.copyright {
-    color: #ffffff;
-    font-size: 11px;
-    position: relative;
-
-    a {
-        color: #ffffff;
-        top: 10px;
-        
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-.copyright-left {
-    float: left;
-}
-
-.copyright-right {
-    // right: 0;
-    float: right;
 }

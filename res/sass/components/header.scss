@@ -1,0 +1,50 @@
+header {
+    background-color: white;
+    position: fixed;
+    height: 120px;
+    z-index: 500;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+
+    .header-contact {
+        line-height: 30px;
+        background-color: $primary-color;
+        height: 30px;
+        margin-bottom: -1px;
+    }
+
+    .header-main {
+        height: 90px;
+        
+        .logo {
+            float: left;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            width: 150px;
+            padding-top: 15px;
+            padding-bottom: 15px !important;
+        }
+    
+        .main-nav {
+            right: 0;
+            clear: none;
+            position: absolute;
+            z-index: 100;
+            line-height: 30px;
+            height: 100%;
+            margin: 0;
+            
+            > ul.menu {
+                list-style: none;
+                list-style-position: outside;
+    
+                > li.menu-item {
+                    line-height: 70px;
+                    float: left;
+                    position: relative;
+                    padding: 0 13px;
+                }
+            }
+        }
+    }
+}
