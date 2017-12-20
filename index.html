@@ -2,6 +2,7 @@
     <meta charset="utf-8">
     <title>Home - Packitoo</title>
     <link rel="stylesheet" href="./res/style/index.css">
+    <link rel="stylesheet" href="./res/style/libs/odometer-theme-default.css" />
 </html>
 <body>
     <div id="wrapper">
@@ -181,11 +182,11 @@
                                 ans d’expérience
                             </div>
                             <div class="flex-item third-item">
-                                +<strong>1000</strong><br>
+                                +<strong class="odometer">10</strong><br>
                                 commandes passées
                             </div>
                             <div class="flex-item third-item">
-                                +<strong>200</strong><br>
+                                +<strong class="odometer">2</strong><br>
                                 fabricants parmi la communauté
                             </div>
                         </div>
@@ -280,4 +281,18 @@
             </footer>
         </div>
     </div>
+    <script src="./res/js/libs/odometer.min.js"></script>
+    <script>
+        var odometer = document.getElementsByClassName("odometer");
+
+        var runOdometer = function(odometer, beginning) {
+                setTimeout(function(){
+                    odometer.innerHTML = (beginning * 100);
+                }, 0);
+            }
+
+        for (var i = 0, len = odometer.length; i < len; i++) {
+            runOdometer(odometer[i], Number(odometer[i].innerHTML));
+        }
+    </script>
 </body>
