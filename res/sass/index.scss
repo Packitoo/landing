@@ -137,8 +137,25 @@ section .container > div {
 }
 
 #process {
-    .process-step {
+    h1 {
+        color: #444444;
+        text-transform: none;
+        font-size: 34px;
+    }
 
+    .process-header {
+        padding-top: 70px;
+    }
+
+    .process-step .inner-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch; 
+        padding: 0 50px;
+
+        .step-side {
+            padding: 7%;
+        }
     }
 
     #process-step-1 {
