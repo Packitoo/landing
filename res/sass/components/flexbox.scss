@@ -1,0 +1,21 @@
+#flex-items-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    padding: 0 50px;
+
+    .flex-item &> img {
+        padding: 10%;
+    }
+
+    .quarter-item {
+        width: 22%;
+        &> img {
+            padding: 10%;
+        }
+    }
+
+    .third-item {
+        width: 30%;
+    }
+}
