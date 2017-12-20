@@ -2,7 +2,6 @@
     <meta charset="utf-8">
     <title>Home - Packitoo</title>
     <link rel="stylesheet" href="./res/style/index.css">
-    <link rel="stylesheet" href="./res/style/libs/odometer-theme-default.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </html>
 <body>
@@ -282,18 +281,5 @@
             </footer>
         </div>
     </div>
-    <script src="./res/js/libs/odometer.min.js"></script>
-    <script>
-        var odometer = document.getElementsByClassName("odometer");
-
-        var runOdometer = function(odometer, beginning) {
-                setTimeout(function(){
-                    odometer.innerHTML = (beginning * 100);
-                }, 0);
-            }
-
-        for (var i = 0, len = odometer.length; i < len; i++) {
-            runOdometer(odometer[i], Number(odometer[i].innerHTML));
-        }
-    </script>
+    <script src="./res/js/counter.js"></script>
 </body>
