@@ -1,7 +1,5 @@
 .flex-items-container {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch; 
     padding: 0 50px;
 
     .flex-item &> img {
@@ -18,4 +16,19 @@
     .third-item {
         width: 30%;
     }
+
+    .half-item {
+        max-width: 50%;
+        width: 48%;
+    }
+}
+
+.flex-items-container.flex-stretch {
+    justify-content: space-between;
+    align-items: stretch; 
+}
+
+.flex-items-container.flex-centered {
+    align-items: center;
+    justify-content: center;
 }

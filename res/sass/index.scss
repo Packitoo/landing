@@ -148,12 +148,9 @@ section .container > div {
     }
 
     .process-step .inner-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch; 
         padding: 0 50px;
 
-        .step-side {
+        .half-item {
             padding: 7%;
         }
     }
