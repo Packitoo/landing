@@ -40,6 +40,10 @@ footer, header, section {
     width: 100%;
 }
 
+img {
+    max-width: 100%;
+}
+
 ul {
     list-style: none;
     list-style-position: outside;
@@ -48,9 +52,8 @@ ul {
 .container {
     max-width: 1310px;
     position: relative;
-    width: 100%;
     margin: 0 auto;
-    padding: 0px 50px;
+    padding: 0px 1%;
 }
 
 .inner-container {
@@ -126,10 +129,6 @@ section .container > div {
 #presentation {
     @include background-img(center right);
     background-image: url("../images/Homepage-Packitoo.jpg");
-
-    .call-to-action-container .button {
-
-    }
 }
 
 #maze {
@@ -149,31 +148,42 @@ section .container > div {
     #process-step-2 {
         background-color: white;
     }
-    
-    #process-step-3 {
-    
-    }
 }
 
-#benefit {    
+#benefit {
+    background-color: white;
 }
 
 #stats {
     background-image: url("../images/Artboard-Copy-5.jpg");  
     color: white;
+    
+    .flex-item strong {
+        font-family: 'Poppins';
+        font-weight: 700 !important;
+        font-size: 60px;    
+    }
 }
 
 #community {
-    img {
-        max-width: 100%;
-    }
+
 }
 
 #call-to-action {
     background-image: url("../images/001-e1494361373846-1500x1266.jpg");
     @include background-img(bottom lef);
+
+    // Parallax effect
+    background-attachment: fixed;
 }
 
 #contact {
+    text-align: center;
 
+    .flex-item .small-button {
+        background-color: #444444;
+        border-color: #444444;
+        color: #ffffff;
+        padding: 15px 30px 13px;
+    }
 }
