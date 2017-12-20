@@ -175,10 +175,30 @@ section .container > div {
     background-image: url("../images/Artboard-Copy-5.jpg");  
     color: white;
     
-    .flex-item strong {
-        font-family: 'Poppins';
-        font-weight: 700 !important;
-        font-size: 60px;    
+    .flex-items-container {
+        text-align: center;
+
+        .flex-item {
+            strong {
+                font-family: 'Poppins';
+                letter-spacing: -2px;
+            
+                .stat-plus-number {
+                    font-weight: 400;
+                    font-size: 40px;
+                    opacity: 0.5;
+                }
+
+                .count {
+                    font-weight: 700 !important;
+                    font-size: 60px;
+                }
+            }
+
+            &> div {
+                font-size: 20px;
+            }
+        }
     }
 }
 
