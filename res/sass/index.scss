@@ -13,6 +13,8 @@
 @import './components/header.scss';
 @import './components/footer.scss';
 
+* {box-sizing: border-box}
+
 body {
     font: 13px/1.65em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #444;
@@ -35,6 +37,11 @@ div {
 footer, header, section {
     display: block;
     width: 100%;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
 }
 
 .container {

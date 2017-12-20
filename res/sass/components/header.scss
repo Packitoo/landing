@@ -36,18 +36,13 @@ header {
             height: 100%;
             margin: 0;
             
-            > ul.menu {
-                list-style: none;
-                list-style-position: outside;
-    
-                > li.menu-item {
-                    line-height: 70px;
-                    float: left;
-                    position: relative;
-                    
-                    &:not(:last-child) {
-                        padding: 0 13px;
-                    }
+            > ul.menu > li.menu-item {
+                line-height: 70px;
+                float: left;
+                position: relative;
+                
+                &:not(:last-child) {
+                    padding: 0 13px;
                 }
             }
         }
