@@ -5,6 +5,7 @@
 @import './mixins/background-img.scss';
 @import './mixins/border-radius.scss';
 @import './mixins/project-button.scss';
+@import './mixins/overlay.scss';
 
 // Components
 @import './components/animation.scss';
@@ -124,13 +125,11 @@ section .container > div {
 }
 
 .red-overlay {
-    background-color: $primary-color;
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    @include overlay($primary-color);
+}
+
+.white-overlay {
+    @include overlay($secondary-color);
 }
 
 #presentation {
@@ -230,7 +229,7 @@ section .container > div {
 
 #call-to-action {
     background-image: url("../images/001-e1494361373846-1500x1266.jpg");
-    @include background-img(bottom lef);
+    @include background-img(bottom left);
 
     // Parallax effect
     background-attachment: fixed;
