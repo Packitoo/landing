@@ -146,11 +146,6 @@ section .container > div {
     background-image: url("../images/maze.jpg");
 }
 
-@keyframes move-the-object {
-    0%   { transform:scale(0.7); opacity: 0.1;  }
-    100% { transform:scale(1); opacity: 1; }
-}
-
 #process {
     h1 {
         color: #444444;
