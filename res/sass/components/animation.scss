@@ -1,0 +1,25 @@
+@mixin animation ($name, $duration, $delay, $timing) {
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-timing-function: $timing;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -moz-animation-name: $name;
+    -moz-animation-duration: $duration;
+    -moz-animation-timing-function: $timing;
+    -moz-animation-delay: $delay;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -o-animation-name: $name;
+    -o-animation-duration: $duration;
+    -o-animation-timing-function: $timing;
+    -o-animation-delay: $delay;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+    animation-delay: $delay;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}

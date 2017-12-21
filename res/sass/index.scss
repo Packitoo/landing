@@ -7,12 +7,16 @@
 @import './mixins/project-button.scss';
 
 // Components
+@import './components/animation.scss';
 @import './components/buttons.scss';
 @import './components/copyrights.scss';
 @import './components/empty-div.scss';
 @import './components/header.scss';
 @import './components/footer.scss';
 @import './components/flexbox.scss';
+
+// Keyframes (animations)
+@import './keyframes/image_appear.scss';
 
 * {box-sizing: border-box}
 
@@ -136,6 +140,11 @@ section .container > div {
     background-image: url("../images/maze.jpg");
 }
 
+@keyframes move-the-object {
+    0%   { transform:scale(0.7); opacity: 0.1;  }
+    100% { transform:scale(1); opacity: 1; }
+}
+
 #process {
     h1 {
         color: #444444;
@@ -150,8 +159,11 @@ section .container > div {
     .process-step .inner-section {
         padding: 0 50px;
 
-        .half-item {
+        .half-item.process-text {
             padding: 7%;
+        }
+        .half-item.process-icon {
+            @include animation(image_appear, 0.5s, 1, cubic-bezier(0.175, 0.885, 0.320, 1.275));
         }
     }
 
