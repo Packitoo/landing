@@ -112,7 +112,7 @@ a {
 
 /*------ MAIN -------*/
 
-div#main {
+div.main {
     padding-top: 120px;
 }
 
@@ -133,142 +133,159 @@ section .container > div {
     @include overlay($secondary-color);
 }
 
-#presentation {
-    @include background-img(center right);
-    background-image: url("../images/Homepage-Packitoo.jpg");
+/*------------------
+    INDEX
+------------------*/
 
-    h1 {
-        color: $primary-color;
-    }
-}
-
-#maze {
-    @include background-img(center center);
-    background-image: url("../images/maze.jpg");
-}
-
-#process {
-    h1 {
-        color: #444444;
-        text-transform: none;
-        font-size: 34px;
-    }
-
-    .process-header {
-        padding-top: 70px;
-    }
-
-    .process-step .inner-section {
-        padding: 0 50px;
-
-        .half-item.process-text {
-            padding: 7%;
+#index {
+    #presentation {
+        @include background-img(center right);
+        background-image: url("../images/Homepage-Packitoo.jpg");
+    
+        h1 {
+            color: $primary-color;
         }
-        .half-item.process-icon {
-            @include animation(image_appear, 0.5s, 1, cubic-bezier(0.175, 0.885, 0.320, 1.275));
-        }
-    }
-
-    #process-step-1 {
-        background-color: $secondary-color;
     }
     
-    #process-step-2 {
+    #maze {
+        @include background-img(center center);
+        background-image: url("../images/maze.jpg");
+    }
+    
+    #process {
+        h1 {
+            color: #444444;
+            text-transform: none;
+            font-size: 34px;
+        }
+    
+        .process-header {
+            padding-top: 70px;
+        }
+    
+        .process-step .inner-section {
+            padding: 0 50px;
+    
+            .half-item.process-text {
+                padding: 7%;
+            }
+            .half-item.process-icon {
+                @include animation(image_appear, 0.5s, 1, cubic-bezier(0.175, 0.885, 0.320, 1.275));
+            }
+        }
+    
+        #process-step-1 {
+            background-color: $secondary-color;
+        }
+        
+        #process-step-2 {
+            background-color: white;
+        }
+    }
+    
+    #benefit {
         background-color: white;
-    }
-}
-
-#benefit {
-    background-color: white;
-    font-family: 'Roboto';
-
-    .flex-item p {
-        font-size: 15px;
-        color: $gray-text-color;
-    }
-}
-
-#stats {
-    background-image: url("../images/Artboard-Copy-5.jpg");  
-    color: white;
+        font-family: 'Roboto';
     
-    .flex-items-container {
-        text-align: center;
-
-        .flex-item {
-            strong {
-                font-family: 'Poppins';
-                letter-spacing: -2px;
-            
-                .stat-plus-number {
-                    font-weight: 400;
-                    font-size: 40px;
-                    opacity: 0.5;
+        .flex-item p {
+            font-size: 15px;
+            color: $gray-text-color;
+        }
+    }
+    
+    #stats {
+        background-image: url("../images/Artboard-Copy-5.jpg");  
+        color: white;
+        
+        .flex-items-container {
+            text-align: center;
+    
+            .flex-item {
+                strong {
+                    font-family: 'Poppins';
+                    letter-spacing: -2px;
+                
+                    .stat-plus-number {
+                        font-weight: 400;
+                        font-size: 40px;
+                        opacity: 0.5;
+                    }
+    
+                    .count {
+                        font-weight: 700 !important;
+                        font-size: 60px;
+                    }
                 }
-
-                .count {
-                    font-weight: 700 !important;
-                    font-size: 60px;
+    
+                &> div {
+                    font-size: 20px;
                 }
-            }
-
-            &> div {
-                font-size: 20px;
             }
         }
     }
-}
-
-#community {
-
-}
-
-#call-to-action {
-    background-image: url("../images/001-e1494361373846-1500x1266.jpg");
-    @include background-img(bottom left);
-
-    // Parallax effect
-    background-attachment: fixed;
-}
-
-#contact {
-    text-align: center;
-
-    .flex-item .small-button {
-        background-color: #444444;
-        border-color: #444444;
-        color: #ffffff;
-        padding: 15px 30px 13px;
+    
+    #community {
+    
+    }
+    
+    #call-to-action {
+        background-image: url("../images/001-e1494361373846-1500x1266.jpg");
+        @include background-img(bottom left);
+    
+        // Parallax effect
+        background-attachment: fixed;
     }
 }
 
-/* About */
-
+/*------------------
+    ABOUT
+------------------*/
 #about {
-    background-image: url("../images/Artboard-Copy-5.jpg");  
-    color: white;
-
-    // Doesn't force section min height
-    .inner-container {
-        height: auto;
-
-        .subheader {
-            font-family: 'Roboto';
-            font-size: 20px;
-            font-weight: 300;
-            margin-top: 0.3em;
+    #about-header {
+        background-image: url("../images/Artboard-Copy-5.jpg");  
+        color: white;
+    
+        // Doesn't force section min height
+        .inner-container {
+            height: auto;
+    
+            .subheader {
+                font-family: 'Roboto';
+                font-size: 20px;
+                font-weight: 300;
+                margin-top: 0.3em;
+            }
         }
+    }
+    
+    #origins {
+        background-image: url("../images/Artboard-Copy-7-1500x990.jpg");
+        @include background-img(bottom right);
+    
+        background-attachment: fixed;
+    }
+    
+    #talks {
+        background-image: url("../images/Artboard-Copy-5.jpg");  
+        color: white;
     }
 }
 
-#origins {
-    background-image: url("../images/Artboard-Copy-7-1500x990.jpg");
-    @include background-img(bottom right);
+/*------------------
+    PRICING
+------------------*/
+#pricing {
 
-    background-attachment: fixed;
 }
 
-#talks {
-    background-image: url("../images/Artboard-Copy-5.jpg");  
-    color: white;
+/*------------------
+    MANUFACTURER
+------------------*/
+
+/*------------------
+    LEGALS
+------------------*/
+
+#legals {
+    
 }
