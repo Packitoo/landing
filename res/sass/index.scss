@@ -263,6 +263,7 @@ section .container > div {
             margin-top: 0.3em;
         }
     }
+}
 
 #origins {
     background-image: url("../images/Artboard-Copy-7-1500x990.jpg");
@@ -270,4 +271,8 @@ section .container > div {
 
     background-attachment: fixed;
 }
+
+#talks {
+    background-image: url("../images/Artboard-Copy-5.jpg");  
+    color: white;
 }
