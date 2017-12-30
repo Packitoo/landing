@@ -1,0 +1,27 @@
+p.input-container {
+    margin: 2px 0;
+    border-color: #ffffff;
+    background-color: #f9f9f9;
+    color: #444444;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+input[type="text"] {
+    display: inline;
+    min-width: 50px;
+    padding: 13px;
+    border-radius: 2px;
+    border: 1px solid #e1e1e1;
+    outline: none;
+    font: 1em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+}
