@@ -307,6 +307,16 @@
                 </div>
             </footer>
         </div>
+        <div class="cookie-message">
+            Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site. Si vous continuez à utiliser ce dernier, nous considérerons que vous acceptez l'utilisation des cookies.
+            <a class="cookie-button" href>Ok</a>
+        </div>
     </div>
-    <script src="./res/js/counter.js"></script>
+    <script type="text/javascript" src="./res/js/jquery.cookieBar.js"></script>
+    <script type="text/javascript" src="./res/js/counter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.cookie-message').cookieBar({ closeButton : '.cookie-button' });
+        });
+    </script>
 </body>
