@@ -310,7 +310,22 @@ section .container > div {
     PRICING
 ------------------*/
 #pricing {
-
+    #header {
+        background-image: url("../images/Artboard-Copy-5.jpg");  
+        color: white;
+    
+        // Doesn't force section min height
+        .inner-container {
+            height: auto;
+    
+            .subheader {
+                font-family: 'Roboto';
+                font-size: 20px;
+                font-weight: 300;
+                margin-top: 0.3em;
+            }
+        }
+    }
 }
 
 /*------------------
