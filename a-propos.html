@@ -2,6 +2,7 @@
     <meta charset="utf-8">
     <title>A propos - Packitoo</title>
     <link rel="stylesheet" href="./res/style/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </html>
 <body>
     <div id="wrapper">
@@ -213,5 +214,16 @@
                 </div>
             </footer>
         </div>
+        <div class="cookie-message">
+            Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site. Si vous continuez à utiliser ce dernier, nous considérerons que vous acceptez l'utilisation des cookies.
+            <a class="cookie-button" href>Ok</a>
+        </div>
     </div>
+    <script type="text/javascript" src="./res/js/jquery.cookieBar.js"></script>
+    <script type="text/javascript" src="./res/js/scroll-effect.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.cookie-message').cookieBar({ closeButton : '.cookie-button' });
+        });
+    </script>
 </body>
