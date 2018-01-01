@@ -1,24 +1,31 @@
 .flex-items-container {
     display: flex;
     padding: 0 50px;
-
-    .flex-item &> img {
-        padding: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .flex-item {
+        flex: 0 0 auto;
     }
 
-    .quarter-item {
+    .col-3 {
         width: 22%;
-        &> img {
-            padding: 10%;
-        }
     }
 
-    .third-item {
+    .col-4 {
         width: 30%;
     }
 
-    .half-item {
+    .col-6 {
         width: 48%;
+    }
+
+    .col-9 {
+        width: 70%;
+    }
+
+    .col-12 {
+        width: 100%;
     }
 }
 

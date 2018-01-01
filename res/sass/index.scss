@@ -168,10 +168,10 @@ section .container > div {
         .process-step .inner-section {
             padding: 0 50px;
     
-            .half-item.process-text {
+            .col-6.process-text {
                 padding: 7%;
             }
-            .half-item.process-icon {
+            .col-6.process-icon {
                 @include animation(image_appear, 0.5s, 1, cubic-bezier(0.175, 0.885, 0.320, 1.275));
             }
         }
