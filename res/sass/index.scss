@@ -18,6 +18,7 @@
 @import './components/header.scss';
 @import './components/footer.scss';
 @import './components/flexbox.scss';
+@import './components/profilePicture.scss';
 
 // Keyframes (animations)
 @import './keyframes/image_appear.scss';
@@ -260,6 +261,24 @@ section .container > div {
                 font-size: 20px;
                 font-weight: 300;
                 margin-top: 0.3em;
+            }
+        }
+    }
+
+    #founders {
+
+        .inner-container {
+            min-height: 800px;
+        }
+
+        .founder-text {
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 15px;
+            color: $dark-text-color;
+
+            .cofounder-name{
+                font-size: 25px;
             }
         }
     }
