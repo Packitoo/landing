@@ -137,7 +137,7 @@ section .container > div {
 }
 
 .white-overlay {
-    @include overlay($secondary-color);
+    @include overlay(#FFFFFF);
 }
 
 /*------------------
@@ -248,6 +248,13 @@ section .container > div {
     ABOUT
 ------------------*/
 #about {
+
+    p, a {
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 15px;
+    }
+
     #about-header {
         background-image: url("../images/Artboard-Copy-5.jpg");  
         color: white;
@@ -272,9 +279,6 @@ section .container > div {
         }
 
         .founder-text {
-            font-family: 'Roboto';
-            font-weight: 300;
-            font-size: 15px;
             color: $dark-text-color;
 
             .cofounder-name{
@@ -288,6 +292,12 @@ section .container > div {
         @include background-img(bottom right);
     
         background-attachment: fixed;
+        text-align: left;
+
+        p {
+            color: $gray-text-color;
+            margin: 0.85em 0;
+        }
     }
     
     #talks {
