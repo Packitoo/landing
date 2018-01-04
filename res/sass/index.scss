@@ -20,6 +20,7 @@
 @import './components/footer.scss';
 @import './components/flexbox.scss';
 @import './components/profile-picture.scss';
+@import './components/pricing-table.scss';
 
 // Keyframes (animations)
 @import './keyframes/image_appear.scss';
@@ -113,9 +114,25 @@ h3 {
     text-align: justify;
 }
 
-
 .secondary-header {
     margin-bottom: 50px;
+}
+
+.subheader {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0.3em;
+}
+
+.larger {
+    font-size: larger;
+}
+
+p, a {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
 }
 
 a {
@@ -254,13 +271,6 @@ section .container > div {
     ABOUT
 ------------------*/
 #about {
-
-    p, a {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 15px;
-    }
-
     #about-header {
         background-image: url("../images/Artboard-Copy-5.jpg");  
         color: white;
@@ -268,13 +278,6 @@ section .container > div {
         // Doesn't force section min height
         .inner-container {
             height: auto;
-    
-            .subheader {
-                font-family: 'Roboto';
-                font-size: 20px;
-                font-weight: 300;
-                margin-top: 0.3em;
-            }
         }
     }
 
@@ -323,13 +326,23 @@ section .container > div {
         // Doesn't force section min height
         .inner-container {
             height: auto;
-    
-            .subheader {
-                font-family: 'Roboto';
-                font-size: 20px;
-                font-weight: 300;
-                margin-top: 0.3em;
-            }
+        }
+    }
+
+    #formulas {
+        background-color: white;
+
+        .inner-container {
+            padding-bottom: 10px;
+        }
+    }
+
+    #services {
+        background-color: white;
+        
+        .inner-container {
+            padding-top: 10px;
+            padding-bottom: 30px;
         }
     }
 }
