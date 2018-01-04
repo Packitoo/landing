@@ -50,7 +50,6 @@ div {
 }
 
 footer, header, section {
-    display: block;
     width: 100%;
 }
 
@@ -96,7 +95,7 @@ h1 {
 h2 {
     font-family: 'Poppins';
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h3 {
@@ -108,7 +107,14 @@ h3 {
     text-align: center;
 }
 
- .secondary-header {
+.centered-text {
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+.secondary-header {
     margin-bottom: 50px;
 }
 
