@@ -18,13 +18,23 @@ header {
     .header-main {
         height: 90px;
         
-        .logo {
+        .container, .inner-container {
+            height: 100%;
+            width: 100%;
+        }
+
+        a.logo-container {
             float: left;
-            position: absolute;
-            z-index: 1;
-            width: 150px;
-            padding-top: 15px;
-            padding-bottom: 15px !important;
+            width: inherit;
+
+            .logo {
+                float: left;
+                position: absolute;
+                z-index: 1;
+                width: 150px;
+                padding-top: 15px;
+                padding-bottom: 15px !important;
+            }
         }
     
         .main-nav {
@@ -36,7 +46,7 @@ header {
             margin: 0;
             
             > ul.menu > li.menu-item {
-                line-height: 70px;
+                line-height: 90px;
                 float: left;
                 position: relative;
                 
