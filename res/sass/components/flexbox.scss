@@ -23,11 +23,11 @@ $narrow-spacing: 0.5%;
         }
     }
 
-    [class^="col-"] {
+    [class^="col-"], [class^="col-md-"], [class^="col-sm-"] [class^="col-xs-"]  {
         margin-right:$col-spacing;
     }
 
-    [class^="col-"] {
+    [class^="col-"], [class^="col-md-"], [class^="col-sm-"] [class^="col-xs-"]  {
         margin-right:$narrow-spacing;
     }
 
