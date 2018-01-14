@@ -79,6 +79,14 @@ ul {
     padding: 0 50px;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.fade-in-div {
+    @include animation(image_appear, 0.5s, 1, cubic-bezier(0.175, 0.885, 0.320, 1.275));
+}
+
 /*------ TEXT -------*/
 h1, h2, h3, h4, h5, h6, p {
     font-style: normal;
@@ -202,9 +210,6 @@ section .container > div {
     
             .col-6.process-text {
                 padding: 7%;
-            }
-            .col-6.process-icon {
-                @include animation(image_appear, 0.5s, 1, cubic-bezier(0.175, 0.885, 0.320, 1.275));
             }
         }
     
