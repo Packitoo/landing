@@ -226,9 +226,13 @@ section .container > div {
         background-color: white;
         font-family: 'Roboto';
     
-        .flex-item p {
-            font-size: 15px;
-            color: $gray-text-color;
+        .flex-item {
+            padding: 1%;
+
+            p {
+                font-size: 15px;
+                color: $gray-text-color;
+            }
         }
     }
     
