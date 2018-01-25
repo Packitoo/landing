@@ -91,6 +91,7 @@ ul {
 h1, h2, h3, h4, h5, h6, p {
     font-style: normal;
     font-stretch: 100%;
+    line-height: 1em;
 }
 
 h1 {
@@ -169,12 +170,17 @@ section .container > div {
 }
 
 .red-overlay {
-    @include overlay($primary-color);
+    @include overlay($primary-color, 0.9);
 }
 
 .white-overlay {
-    @include overlay(#FFFFFF);
+    @include overlay(#FFFFFF, 0.9);
 }
+
+.light-white-overlay {
+    @include overlay(#FFFFFF, 0.4);
+}
+
 
 /*------------------
     INDEX
@@ -363,6 +369,114 @@ section .container > div {
 /*------------------
     MANUFACTURER
 ------------------*/
+
+#manufacturer {
+    #presentation {
+        @include background-img(center right);
+        background-image: url("../images/Homepage-Packitoo.jpg");
+    
+        h1 {
+            color: $primary-color;
+        }
+    }
+    
+    #maze {
+        @include background-img(center center);
+        background-image: url("../images/maze.jpg");
+    }
+    
+    #process {
+        h1 {
+            color: #444444;
+            text-transform: none;
+            font-size: 34px;
+        }
+    
+        .process-header {
+            padding-top: 70px;
+        }
+    
+        .process-step .inner-section {
+            padding: 0 50px;
+    
+            .col-6.process-text {
+                padding: 7%;
+            }
+        }
+    
+        #process-step-1 {
+            background-color: $secondary-color;
+        }
+        
+        #process-step-2 {
+            background-color: white;
+        }
+    }
+    
+    #benefit {
+        background-color: white;
+        font-family: 'Roboto';
+    
+        .flex-item {
+            padding: 1%;
+
+            p {
+                font-size: 15px;
+                color: $gray-text-color;
+            }
+        }
+    }
+    
+    #community, #formula {
+        @include background-img(center center);
+        background-image: url("../images/Artboard-Copy-5.jpg");  
+        color: white;
+        
+        // Parallax effect
+        background-attachment: fixed;
+        .flex-items-container {
+            text-align: center;
+    
+            .flex-item {
+                strong {
+                    font-family: 'Poppins';
+                    letter-spacing: -2px;
+                
+                    .stat-plus-number {
+                        font-weight: 400;
+                        font-size: 40px;
+                        opacity: 0.5;
+                    }
+    
+                    .count {
+                        font-weight: 700 !important;
+                        font-size: 60px;
+                    }
+                }
+    
+                &> div {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    #formulas {
+        background-color: white;
+
+        .inner-container {
+            padding-bottom: 10px;
+        }
+    }
+    
+    #call-to-action {
+        background-image: url("../images/001-e1494361373846-1500x1266.jpg");
+        @include background-img(bottom left);
+    
+        // Parallax effect
+        background-attachment: fixed;
+    }
+}
 
 /*------------------
     LEGALS
