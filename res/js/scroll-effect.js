@@ -19,14 +19,14 @@ function isInView(id) {
 // `id` is the id of the html tag
 // `cls` is the class to add to the html tag
 function fadeInEffect(id, cls) {
-    if (isInView(id)) {
+    if ($(id).length > 0 && isInView(id)) {
         $(id).addClass(cls);
         $(id).removeClass('hidden');
     }
 }
 
 function counterEffect(id) {
-    if (isInView(id) && $(id).attr('class').indexOf('count-effect') == -1 ) {
+    if ($(id).length > 0 && isInView(id) && $(id).attr('class').indexOf('count-effect') == -1 ) {
         $(id).addClass('count-effect');
         $('.count').each(function () {
             $(this).prop('Counter',0).animate({
@@ -62,7 +62,7 @@ $(window).scroll(function() {
     counterEffect("#stats");
 
     // Index - Communauty               -- fadeIn w/ bounce
-    fadeInEffect("#community-map", 'fade-in-div');
+    // fadeInEffect("#community-map", 'fade-in-div');
 
     // Index - call-to-action button    -- fadeIn
     // About - Image "talks"            -- fadeIn
