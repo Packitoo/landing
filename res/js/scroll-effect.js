@@ -4,7 +4,7 @@ var artboard22 = false;
 
 // isInView check if a div is currently displayed
 // `id` is the id of the html tag to check
-// 
+//
 // Doesn't work with elements repeated in a view
 function isInView(id) {
     var elementTop = $(id).offset().top;
@@ -46,7 +46,7 @@ $(window).scroll(function() {
     var fromTop = $(window).scrollTop();
     var headerMargin = 0;
 
-    // Header 
+    // Header
     headerMargin = (fromTop > 30) ? -30 : -fromTop;
     $(".header-contact").css('margin-top', headerMargin);
 
@@ -57,6 +57,9 @@ $(window).scroll(function() {
     fadeInEffect("#step-2-text", 'fade-in-div');
     fadeInEffect("#step-3-icon", 'fade-in-div');
     fadeInEffect("#step-3-text", 'fade-in-div');
+    fadeInEffect("#community-map", 'fade-in-div');
+
+
 
     // Index - Stats                    -- fadeIn w/ bounce
     counterEffect("#stats");
