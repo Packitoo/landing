@@ -96,14 +96,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
     font-size: 50px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 700 !important;
     line-height: 1.1em;
-    margin-bottom: 0px;    
+    margin-bottom: 0px;
 }
 
 h2 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 300;
 }
@@ -189,49 +189,49 @@ section .container > div {
     #presentation {
         @include background-img(center right);
         background-image: url("../images/Homepage-Packitoo.jpg");
-    
+
         h1 {
             color: $primary-color;
         }
     }
-    
+
     #maze {
         @include background-img(center center);
         background-image: url("../images/maze.jpg");
     }
-    
+
     #process {
         h1 {
             color: #444444;
             text-transform: none;
             font-size: 34px;
         }
-    
+
         .process-header {
             padding-top: 70px;
         }
-    
+
         .process-step .inner-section {
             padding: 0 50px;
-    
+
             .col-6.process-text {
                 padding: 7%;
             }
         }
-    
+
         #process-step-1 {
             background-color: $secondary-color;
         }
-        
+
         #process-step-2 {
             background-color: white;
         }
     }
-    
+
     #benefit {
         background-color: white;
         font-family: 'Roboto';
-    
+
         .flex-item {
             padding: 1%;
 
@@ -241,46 +241,46 @@ section .container > div {
             }
         }
     }
-    
+
     #stats {
-        background-image: url("../images/Artboard-Copy-5.jpg");  
+        background-image: url("../images/Artboard-Copy-5.jpg");
         color: white;
-        
+
         .flex-items-container {
             text-align: center;
-    
+
             .flex-item {
                 strong {
-                    font-family: 'Poppins';
+                    font-family: 'Poppins', sans-serif;
                     letter-spacing: -2px;
-                
+
                     .stat-plus-number {
                         font-weight: 400;
                         font-size: 40px;
                         opacity: 0.5;
                     }
-    
+
                     .count {
                         font-weight: 700 !important;
                         font-size: 60px;
                     }
                 }
-    
+
                 &> div {
                     font-size: 20px;
                 }
             }
         }
     }
-    
+
     #community {
-    
+
     }
-    
+
     #call-to-action {
         background-image: url("../images/001-e1494361373846-1500x1266.jpg");
         @include background-img(bottom left);
-    
+
         // Parallax effect
         background-attachment: fixed;
     }
@@ -291,9 +291,9 @@ section .container > div {
 ------------------*/
 #about {
     #about-header {
-        background-image: url("../images/Artboard-Copy-5.jpg");  
+        background-image: url("../images/Artboard-Copy-5.jpg");
         color: white;
-    
+
         // Doesn't force section min height
         .inner-container {
             height: auto;
@@ -314,11 +314,11 @@ section .container > div {
             }
         }
     }
-    
+
     #origins {
         background-image: url("../images/Artboard-Copy-7-1500x990.jpg");
         @include background-img(bottom right);
-    
+
         background-attachment: fixed;
         text-align: left;
 
@@ -327,9 +327,9 @@ section .container > div {
             margin: 0.85em 0;
         }
     }
-    
+
     #talks {
-        background-image: url("../images/Artboard-Copy-5.jpg");  
+        background-image: url("../images/Artboard-Copy-5.jpg");
         color: white;
     }
 }
@@ -339,9 +339,9 @@ section .container > div {
 ------------------*/
 #pricing {
     #header {
-        background-image: url("../images/Artboard-Copy-5.jpg");  
+        background-image: url("../images/Artboard-Copy-5.jpg");
         color: white;
-    
+
         // Doesn't force section min height
         .inner-container {
             height: auto;
@@ -358,7 +358,7 @@ section .container > div {
 
     #services {
         background-color: white;
-        
+
         .inner-container {
             padding-top: 10px;
             padding-bottom: 30px;
@@ -374,49 +374,49 @@ section .container > div {
     #presentation {
         @include background-img(center right);
         background-image: url("../images/Homepage-Packitoo.jpg");
-    
+
         h1 {
             color: $primary-color;
         }
     }
-    
+
     #maze {
         @include background-img(center center);
         background-image: url("../images/maze.jpg");
     }
-    
+
     #process {
         h1 {
             color: #444444;
             text-transform: none;
             font-size: 34px;
         }
-    
+
         .process-header {
             padding-top: 70px;
         }
-    
+
         .process-step .inner-section {
             padding: 0 50px;
-    
+
             .col-6.process-text {
                 padding: 7%;
             }
         }
-    
+
         #process-step-1 {
             background-color: $secondary-color;
         }
-        
+
         #process-step-2 {
             background-color: white;
         }
     }
-    
+
     #benefit {
         background-color: white;
         font-family: 'Roboto';
-    
+
         .flex-item {
             padding: 1%;
 
@@ -426,34 +426,34 @@ section .container > div {
             }
         }
     }
-    
+
     #community, #formula {
         @include background-img(center center);
-        background-image: url("../images/Artboard-Copy-5.jpg");  
+        background-image: url("../images/Artboard-Copy-5.jpg");
         color: white;
-        
+
         // Parallax effect
         background-attachment: fixed;
         .flex-items-container {
             text-align: center;
-    
+
             .flex-item {
                 strong {
-                    font-family: 'Poppins';
+                    font-family: 'Poppins', sans-serif;
                     letter-spacing: -2px;
-                
+
                     .stat-plus-number {
                         font-weight: 400;
                         font-size: 40px;
                         opacity: 0.5;
                     }
-    
+
                     .count {
                         font-weight: 700 !important;
                         font-size: 60px;
                     }
                 }
-    
+
                 &> div {
                     font-size: 20px;
                 }
@@ -468,11 +468,11 @@ section .container > div {
             padding-bottom: 10px;
         }
     }
-    
+
     #call-to-action {
         background-image: url("../images/001-e1494361373846-1500x1266.jpg");
         @include background-img(bottom left);
-    
+
         // Parallax effect
         background-attachment: fixed;
     }
@@ -482,7 +482,7 @@ section .container > div {
     LEGALS
 ------------------*/
 #legals {
-    
+
 }
 
 /*------------------
@@ -501,16 +501,16 @@ section .container > div {
             font-size: 13.8px;
             font-weight: 700;
         }
-    
+
         [class^="narrow-col-"] {
             margin: 11px 0;
-    
+
             label {
                 display: block;
                 margin-bottom: 7px;
             }
         }
-    
+
         abbr, span.red {
             color: $primary-color;
         }

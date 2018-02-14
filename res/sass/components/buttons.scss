@@ -6,7 +6,7 @@
 
 .small-button {
     padding: 12px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     @include project-button();
 
     &:hover {
