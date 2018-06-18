@@ -1,3 +1,4 @@
 screens/
 res/style/*.map
 .sass-cache
+/*.html
