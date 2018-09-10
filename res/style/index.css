@@ -540,6 +540,126 @@ img.profile {
     .pricing-table-wrap ul li > .button {
       display: inline-block; }
 
+.pricing-table-container .div-center {
+  display: flex;
+  justify-content: center; }
+.pricing-table-container .header-information {
+  margin-bottom: 1%; }
+  .pricing-table-container .header-information .information-box {
+    display: flex;
+    justify-content: center; }
+  .pricing-table-container .header-information .information-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2%;
+    width: 15%; }
+    .pricing-table-container .header-information .information-content .header-information-text {
+      margin-top: 4%;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+      color: #d2101b; }
+.pricing-table-container .package-button-alignment-fix {
+  margin-bottom: 10px; }
+.pricing-table-container .wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center; }
+  .pricing-table-container .wrapper > * {
+    flex: 1 100%; }
+.pricing-table-container .block {
+  margin: 3%;
+  max-width: 100%; }
+  .pricing-table-container .block .blockbox {
+    display: flex;
+    flex-direction: row; }
+    .pricing-table-container .block .blockbox .square-brown {
+      width: 15px;
+      height: 15px;
+      background-color: #c49261; }
+    .pricing-table-container .block .blockbox .square-red {
+      width: 15px;
+      height: 15px;
+      background-color: #d2101b; }
+.pricing-table-container .package-content {
+  margin-left: 1%; }
+  .pricing-table-container .package-content.hover-visible {
+    visibility: hidden;
+    display: inline-block; }
+  .pricing-table-container .package-content.hover-reveal:hover > .hover-visible {
+    visibility: visible; }
+  .pricing-table-container .package-content .arrow-div {
+    position: relative;
+    background: #f1f1f1;
+    border: 2px solid #e6e6e6; }
+  .pricing-table-container .package-content .arrow-div:after, .pricing-table-container .package-content .arrow-div:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .pricing-table-container .package-content .arrow-div:after {
+    border-color: rgba(241, 241, 241, 0);
+    border-bottom-color: #f1f1f1;
+    border-width: 8px;
+    margin-left: -20px; }
+  .pricing-table-container .package-content .arrow-div:before {
+    border-color: rgba(230, 230, 230, 0);
+    border-bottom-color: #e6e6e6;
+    border-width: 11px;
+    margin-left: -23px; }
+.pricing-table-container .package {
+  text-align: left;
+  background: #fcfcfc;
+  border-radius: 2px;
+  border-left: solid 1px #e6e6e6;
+  border-right: solid 1px #e6e6e6; }
+  .pricing-table-container .package .lightgray-header {
+    background-color: #e5eaeb; }
+  .pricing-table-container .package .darkgray-header {
+    background: #cccccc; }
+  .pricing-table-container .package .header-block {
+    height: 100%;
+    text-align: center; }
+    .pricing-table-container .package .header-block .block {
+      vertical-align: middle; }
+.pricing-table-container .package-bottom {
+  border-bottom: solid 1px #e6e6e6; }
+.pricing-table-container .package-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.31;
+  text-align: left;
+  color: #0e2f44; }
+.pricing-table-container .red-text {
+  color: #d2101b; }
+@media all and (min-width: 600px) {
+  .pricing-table-container .information {
+    flex: 1 auto; } }
+@media all and (min-width: 800px) {
+  .pricing-table-container .package {
+    flex: 3 0px; } }
+.pricing-table-container .box-info-offices {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-top: 5px; }
+.pricing-table-container .right-alignement {
+  float: right; }
+.pricing-table-container .subscribe-alignement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .pricing-table-container .subscribe-alignement .box-subscribe {
+    display: flex;
+    flex-direction: column; }
+  .pricing-table-container .subscribe-alignement .subscribe-content {
+    margin-top: 40px; }
+
 @-webkit-keyframes image_appear {
   0% {
     -webkit-transform: scale(0.7);
