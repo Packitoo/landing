@@ -582,6 +582,8 @@ img.profile {
       width: 15px;
       height: 15px;
       background-color: #d2101b; }
+    .pricing-table-container .block .blockbox .center {
+      margin: 0 auto; }
 .pricing-table-container .package-content {
   margin-left: 1%; }
   .pricing-table-container .package-content.hover-visible {
